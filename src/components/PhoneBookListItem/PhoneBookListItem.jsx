@@ -10,7 +10,7 @@ const PhoneBookListItem = ({ name, number, id, onDeleteContact }) => {
         {name}:
       </span>
       <span>{number}</span>
-      <Button onClick={onDeleteContact} id={id}>
+      <Button onClick={() => {onDeleteContact(id)}}>
         delete
       </Button>
     </Item>
